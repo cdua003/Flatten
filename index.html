@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Flatten an array of integers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <div id="wrapper" class="divided">
+        <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+            <div class="content">
+                <h1>Flatten</h1>
+                <p class="major">Flatten an array of arbitrarily nested arrays of integers into a flat array of integers. </p>
+                <small>e.g. [[1,2,[3]],4] -> [1,2,3,4].</small>
+            </div>
+            <div class="image container">
+                <img src="images/banner.jpg" alt="" />
+                <div class="centered-div">
+                    <form id="mainForm">
+                        <div class="field color-w">
+                            <input type="text" name="name" id="inputArray" value="" placeholder="Input your array" />
+                        </div>
+                        <div class="field third first color-w">
+                            <input type="radio" id="noSorting" name="sortingOption" value="none" checked />
+                            <label for="noSorting">No sorting</label>
+                        </div>
+                        <div class="field third color-w">
+                            <input type="radio" id="ascending" name="sortingOption" value="ascending" />
+                            <label for="ascending">Ascending</label>
+                        </div>
+                        <div class="field third color-w">
+                            <input type="radio" id="descending" name="sortingOption" value="descending" />
+                            <label for="descending">Descending</label>
+                        </div>
+                        <div class="field centered-h margin-0">
+                            <a id="flattenBtn" href="#" class="button special">FLATTEN</a>
+                        </div>
+                    </form>
+                    <div id="errorMsg" class="centered-h hide">
+                        <label class="color-error">Incorrect input format</label>
+                    </div>
+                    <div id="output" class="centered-h hide">
+                        <label id="output-result" class="color-w"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/flattenSvc.js"></script>
+    <script src="assets/js/flatten.js"></script>
+</body>
+</html>
